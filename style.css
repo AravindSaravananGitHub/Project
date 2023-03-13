@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+*{
+    margin: 0px;
+    padding:0px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.box{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+.form{
+    width: 400px;
+    min-height: 400px;
+    padding:16px 32px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.form img{
+    display: block;
+    margin: auto;
+} 
+.form .Form-logo{
+    font-size: 20px;
+    font-weight: 650;
+    margin-bottom: 20px;
+}     
+.form-group{
+    height: 48px;
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+} 
+.form-control{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: 1px solid #a1a1a1;
+    padding: 16px;
+    border-radius: 3px;
+    z-index: 1;
+} 
+.form-control:focus{
+    border: none;
+    border: 1px solid #a1a1a1;
+    outline: none;
+    border: 2px solid #1866C9;
+}    
+.form-lable{
+    position: absolute;
+    font-size: 16px;
+    top: 13px;
+    left: 16px;
+    color: #a1a1a1;
+    background-color: white;
+    transition: .3s;
+}
+.form-control:focus+ .form-lable{
+    top:-10px;
+    z-index: 2;
+    color:#1866C9;
+    font-weight: 500;
+}
+.form-control:not(:focus):valid+ .form-lable{
+    top:-10px;
+    z-index: 2;
+    color:#1866C9;
+    font-weight: 500;
+}
+.form-group .show-lable{
+    font-size: 15px;
+}
+.box-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+.box-bottom a{
+    text-decoration: none;
+    color:#1866C9;
+    font-size: 14px;
+    font-weight: 500;
+}
+.box-bottom .btn{
+    display: block;
+    padding: 10px 16px;
+    color: white;
+    border: none;
+    background-color: #1866C9;
+    border-radius: 3px;
+}
+.box-bottom .btn:hover{
+    box-shadow: 0px 10px 36px 0px rgba(0, 0, 0, 0.2);
+}
